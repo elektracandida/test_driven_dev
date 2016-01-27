@@ -3,14 +3,14 @@ def get_word_lengths(s):
     Returns a list of integers representing
     the word lengths in string s.
     """
-    return None
+    return map(len, s.split()) 
 
 def get_character(s, c):
     """ 
     Returns the number of times that character c appears
     in sentence s.
-    """
-    return None   
+    """ 
+    return s.count(c)    
 
 def test_get_word_lengths():
     text = "Three tomatoes are walking down the street"
